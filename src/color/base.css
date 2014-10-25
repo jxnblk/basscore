@@ -3,11 +3,18 @@ body {
 }
 
 a {
+  color: var(--blue);
+  text-decoration: none;
 }
 
 a:hover {
+  text-decoration: underline;
 }
 
 hr {
+  border: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--border-color);
 }
 

@@ -1,20 +1,47 @@
 
 .border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--border-color);
 }
 
 .border-top {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-color: var(--border-color);
 }
 
 .border-right {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-color: var(--border-color);
 }
 
 .border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-color: var(--border-color);
 }
 
 .border-left {
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-color: var(--border-color);
 }
 
-.rounded { }
-.circle  { border-radius: 9999px }
-.ellipse { border-radius: 50% }
+.border-blue {
+  border-color: var(--blue);
+}
+
+.border-red {
+  border-color: var(--red);
+}
+
+.border-green {
+  border-color: var(--green);
+}
+
+.rounded { border-radius: var(--border-radius) }
+.circle  { border-radius: 9999px !important }
+.ellipse { border-radius: 50% !important; }
 

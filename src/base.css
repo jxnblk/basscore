@@ -12,8 +12,11 @@
 @import "./color/base";
 @import "./color/borders";
 @import "./color/button-blue";
+@import "./color/button-red";
+@import "./color/button-gray";
 @import "./color/colors";
 @import "./color/form-field-light";
+@import "./color/tables";
 
 :root {
 
@@ -24,21 +27,29 @@
   --h5: .875rem;
   --h6: .75rem;
 
-  --space-1: .25rem;
-  --space-2: .75rem;
-  --space-3: 1.5rem;
+  --bold-font-weight: 500;
+
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
   --space-4: 4rem;
 
   --blue: #0076df;
+  --dark-blue: #0056bf;
   --dark-gray: #333;
   --mid-gray: #999;
   --light-gray: #ccc;
   --lighter-gray: #eee;
 
   --red: #f95020;
+  --dark-red: #d93000;
+  --green: #00cf26;
 
-  --border-color: var(--light-gray);
-  --border-radius: 2px;
+  --darken-1: rgba(#000, .25);
+  --darken-2: rgba(#000, .5);
+
+  --border-color: var(--mid-gray);
+  --border-radius: 4px;
 
 }
 

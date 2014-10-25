@@ -11,52 +11,205 @@
 
   <header class="container p3">
     <h1 class="mb0">Basscore</h1>
-    <p>Minimalist theme for Basscss</p>
+    <p class="h3">
+      Minimalist theme for
+      <a href="http://basscss.com">Basscss</a>
+    </p>
     <hr>
   </header>
 
   <div class="container p3">
 
     <section id="typography" class="py3">
-      <h1>Hamburger 1</h1>
-      <h2>Hamburger 2</h2>
-      <h3>Hamburger 3</h3>
-      <h4>Hamburger 4</h4>
-      <h5>Hamburger 5</h5>
-      <h6>Hamburger 6</h6>
-      <p class="h3">
-        Bacon ipsum dolor amet pancetta tenderloin porchetta, tail cow t-bone brisket frankfurter beef swine sirloin venison. Pork loin ribeye doner, strip steak hamburger pancetta bresaola short ribs ham hock sirloin flank. Cow kielbasa turkey, meatball pig venison ground round t-bone. Shank beef cow t-bone tri-tip shoulder prosciutto bresaola. Pig ball tip pastrami, hamburger beef biltong frankfurter ribeye fatback andouille sirloin kevin tongue. Flank t-bone shoulder chicken. Flank salami turducken doner.
-      </p>
-      <p>
-        Bacon ipsum dolor amet pancetta tenderloin porchetta, tail cow t-bone brisket frankfurter beef swine sirloin venison. Pork loin ribeye doner, strip steak hamburger pancetta bresaola short ribs ham hock sirloin flank. Cow kielbasa turkey, meatball pig venison ground round t-bone. Shank beef cow t-bone tri-tip shoulder prosciutto bresaola. Pig ball tip pastrami, hamburger beef biltong frankfurter ribeye fatback andouille sirloin kevin tongue. Flank t-bone shoulder chicken. Flank salami turducken doner.
-      </p>
+      <h1>Typography</h1>
+      <hr>
+      <div class="sm-flex mxn2">
+        <div class="flex-1 px2">
+          <h1 class="mt0">Hamburger 1</h1>
+          <h2>Hamburger 2</h2>
+          <h3>Hamburger 3</h3>
+          <h4>Hamburger 4</h4>
+          <h5>Hamburger 5</h5>
+          <h6>Hamburger 6</h6>
+        </div>
+        <div class="flex-1 sm-col-6 px2">
+          <p class="h3">
+            Bacon ipsum dolor amet pancetta tenderloin porchetta, tail cow t-bone brisket frankfurter beef swine sirloin venison. Pork loin ribeye doner, strip steak hamburger pancetta bresaola short ribs ham hock sirloin flank. Cow kielbasa turkey, meatball pig venison ground round t-bone. Shank beef cow t-bone tri-tip shoulder prosciutto bresaola. Pig ball tip pastrami, hamburger beef biltong frankfurter ribeye fatback andouille sirloin kevin tongue. Flank t-bone shoulder chicken. Flank salami turducken doner.
+          </p>
+          <p>
+            Bacon ipsum dolor amet pancetta tenderloin porchetta, tail cow t-bone brisket frankfurter beef swine sirloin venison. Pork loin ribeye doner, strip steak hamburger pancetta bresaola short ribs ham hock sirloin flank. Cow kielbasa turkey, meatball pig venison ground round t-bone. Shank beef cow t-bone tri-tip shoulder prosciutto bresaola. Pig ball tip pastrami, hamburger beef biltong frankfurter ribeye fatback andouille sirloin kevin tongue. Flank t-bone shoulder chicken. Flank salami turducken doner.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="forms" class="py3">
+      <h1>Forms</h1>
+      <hr>
+      <div class="sm-flex mxn2">
+        <div class="flex-1 px2">
+          <form class="p2 mb3 border rounded">
+            <label class="block">Username</label>
+            <input type="text" class="block mb1 full-width field-light">
+            <label class="block">Password</label>
+            <input type="password" class="block mb1 full-width field-light" class="Password">
+            <label class="block mb2">
+              <input type="checkbox" checked>
+              Remember Me
+            </label>
+            <button type="button" class="button-blue">Sign In</button>
+          </form>
+          <form class="flex flex-align-center mb3">
+            <label class="mr1">Search</label>
+            <input type="text" class="flex-1 mr1 mb0 field-light">
+            <button type="button" class="button-blue">Go</button>
+          </form>
+        </div>
+        <div class="sm-col-1 sm-show">&nbsp;</div>
+        <div class="flex-1 px2 mb3">
+          <form class="p2 border rounded">
+            <label class="block">Error</label>
+            <input type="text" class="block mb1 full-width field-light is-error">
+            <label class="block">Success</label>
+            <input type="text" class="block mb2 full-width field-light is-success">
+            <label class="block">Disabled</label>
+            <input type="text" class="block mb2 full-width field-light" disabled value="Disabled">
+            <label class="block">Read Only</label>
+            <input type="text" class="block mb2 full-width field-light" readonly value="Read Only">
+            <button type="button" class="button-blue">Sign In</button>
+          </form>
+        </div>
     </section>
 
     <section id="buttons" class="py3">
-      <button class="button-blue">Blue Button</button>
-      <button class="button-gray">Blue Button</button>
+      <h1>Buttons</h1>
+      <hr>
+      <div class="center md-flex flex-justify-between">
+        <button class="mb1 button-blue">Blue Button</button>
+        <button class="mb1 button-red">Red Button</button>
+        <button class="mb1 button-gray">Gray Button</button>
+        <br class="md-hide">
+        <button class="mb1 button-blue circle">Circle Button</button>
+        <button class="mb1 button-red circle">Circle Button</button>
+        <button class="mb1 button-gray circle">Circle Button</button>
+      </div>
     </section>
 
     <section id="tables" class="py3">
+      <h1>Tables</h1>
+      <hr>
+      <table class="table-light">
+        <thead>
+          <tr> <th>Bacon</th> <th>Burger</th> <th>Proscuitto</th> <th>Beef</th> <th>Turkey</th> </tr>
+        </thead>
+        <tbody>
+          <tr> <td>Frankfurter</td> <td>Fatback</td> <td>Sausage</td> <td>Pork Chops</td> <td>Corned Beef</td> </tr>
+          <tr> <td>Salami</td> <td>Chuck</td> <td>Tongue</td> <td>Jerky</td> <td>Corned beef</td> </tr>
+          <tr> <td>Sausage</td> <td>Tenderloin</td> <td>Shankle</td> <td>Meatball</td> <td>Capicola</td> </tr>
+          <tr> <td>Short ribs</td> <td>Biltong</td> <td>Jowl</td> <td>Porchetta</td> <td>Shank</td> </tr>
+          <tr> <td>Meatball</td> <td>Pancetta</td> <td>Shankle</td> <td>Tail</td> <td>Venison</td> </tr>
+          <tr> <td>Jowl</td> <td>Biltong</td> <td>Meatloaf</td> <td>Frankfurter</td> <td>Swine</td> </tr>
+          <tr> <td>Tri-tip</td> <td>Shankle</td> <td>Shoulder</td> <td>Biltong</td> <td>Landjaeger</td> </tr>
+          <tr> <td>T-bone</td> <td>Sausage</td> <td>Doner</td> <td>Frankfurter</td> <td>Pancetta</td> </tr>
+          <tr> <td>Bratwurst</td> <td>Pastrami</td> <td>Bresaola</td> <td>Capicola</td> <td>Biltong</td> </tr>
+        </tbody>
+      </table>
     </section>
 
     <section id="colors" class="py3">
+      <h1>Colors</h1>
+      <hr>
+      <div class="sm-flex flex-stretch mxn2 center">
+        <div class="flex-1 px2">
+          <div class="p2 white bg-blue">Blue</div>
+        </div>
+        <div class="sm-col-2 px2">
+          <div class="p2 white bg-red">Red</div>
+        </div>
+        <div class="sm-col-2 px2">
+          <div class="p2 white bg-dark-gray">Dark Gray</div>
+        </div>
+        <div class="sm-col-2 px2">
+          <div class="p2 white bg-mid-gray">Mid Gray</div>
+        </div>
+        <div class="sm-col-2 px2">
+          <div class="p2 white bg-light-gray">Light Gray</div>
+        </div>
+      </div>
     </section>
 
     <section id="navigation" class="py3">
+      <h1>Navigation</h1>
+      <hr>
     </section>
 
     <section id="navbars" class="py3">
+      <h1>Navbars</h1>
+      <hr>
     </section>
 
     <section id="boxes" class="py3">
+      <h1>Boxes</h1>
+      <hr>
+      <div class="sm-flex flex-stretch mxn2">
+        <div class="flex-1 px2">
+          <div class="mb2 rounded border">
+            <div class="p2 border-bottom">
+              <h1 class="h3 bold m0">Box</h1>
+            </div>
+            <div class="p2">
+              Bacon hamburger kevin prosciutto. Kielbasa turkey chuck, leberkas sirloin andouille biltong spare ribs drumstick shoulder fatback tri-tip beef meatball hamburger. Turducken kielbasa bresaola tail boudin, ham hock kevin doner bacon flank tri-tip pastrami pig t-bone shankle.
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 px2">
+          <div class="mb2 rounded border border-blue">
+            <div class="p2 blue border-bottom border-blue">
+              <h1 class="h3 bold m0">Blue Box</h1>
+            </div>
+            <div class="p2">
+              Bacon hamburger kevin prosciutto. Kielbasa turkey chuck, leberkas sirloin andouille biltong spare ribs drumstick shoulder fatback tri-tip beef meatball hamburger. Turducken kielbasa bresaola tail boudin, ham hock kevin doner bacon flank tri-tip pastrami pig t-bone shankle.
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 px2">
+          <div class="mb2 rounded border border-red">
+            <div class="p2 red border-bottom border-red">
+              <h1 class="h3 m0">Red Box</h1>
+            </div>
+            <div class="p2">
+              Bacon hamburger kevin prosciutto. Kielbasa turkey chuck, leberkas sirloin andouille biltong spare ribs drumstick shoulder fatback tri-tip beef meatball hamburger. Turducken kielbasa bresaola tail boudin, ham hock kevin doner bacon flank tri-tip pastrami pig t-bone shankle.
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="flex-1 px2">
+          <div class="mb2 rounded border border-green">
+            <div class="p2 green border-bottom border-green">
+              <h1 class="h3 m0">Red Box</h1>
+            </div>
+            <div class="p2">
+              Bacon hamburger kevin prosciutto. Kielbasa turkey chuck, leberkas sirloin andouille biltong spare ribs drumstick shoulder fatback tri-tip beef meatball hamburger. Turducken kielbasa bresaola tail boudin, ham hock kevin doner bacon flank tri-tip pastrami pig t-bone shankle.
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
     </section>
 
 
   </div>
+
+  <hr>
+
+  <footer class="xbg-lighter-gray">
+    <div class="container px3 py4">
+      <p class="m0 mid-gray">
+        Made with love by
+        <a href="http://jxnblk.com" class="mid-gray">Jxnblk</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
