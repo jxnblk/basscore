@@ -1,0 +1,44 @@
+/*
+ * Basscore
+ * Minimal theme for Basscss
+ */
+
+@import "basscss-base";
+@import "basscss-utilities";
+@import "basscss-grid";
+@import "basscss-table-object";
+@import "flex-object";
+
+@import "./color/base";
+@import "./color/borders";
+@import "./color/button-blue";
+@import "./color/colors";
+@import "./color/form-field-light";
+
+:root {
+
+  --h1: 3rem;
+  --h2: 2rem;
+  --h3: 1.125rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+
+  --space-1: .25rem;
+  --space-2: .75rem;
+  --space-3: 1.5rem;
+  --space-4: 4rem;
+
+  --blue: #0076df;
+  --dark-gray: #333;
+  --mid-gray: #999;
+  --light-gray: #ccc;
+  --lighter-gray: #eee;
+
+  --red: #f95020;
+
+  --border-color: var(--light-gray);
+  --border-radius: 2px;
+
+}
+

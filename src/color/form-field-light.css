@@ -1,0 +1,20 @@
+
+.field-light {
+}
+
+.field-light:focus {
+}
+
+.field-light:read-only:not(select) {
+}
+
+.field-light:invalid,
+.field-light.is-error {
+}
+
+.field-light.is-warning {
+}
+
+.field-light.is-success {
+}
+
