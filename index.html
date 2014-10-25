@@ -52,14 +52,16 @@
             <label class="block">Username</label>
             <input type="text" class="block mb1 full-width field-light">
             <label class="block">Password</label>
-            <input type="password" class="block mb1 full-width field-light" class="Password">
-            <label class="block mb2">
-              <input type="checkbox" checked>
-              Remember Me
-            </label>
-            <button type="button" class="button-blue">Sign In</button>
+            <input type="password" class="block mb2 full-width field-light" class="Password">
+            <div class="flex flex-align-center flex-justify-between">
+              <label class="block flex-last">
+                <input type="checkbox" checked>
+                Remember Me
+              </label>
+              <button type="button" class="button-blue">Sign In</button>
+            </div>
           </form>
-          <form class="flex flex-align-center mb3">
+          <form class="flex flex-align-center p2 mb3 border rounded">
             <label class="mr1">Search</label>
             <input type="text" class="flex-1 mr1 mb0 field-light">
             <button type="button" class="button-blue">Go</button>
@@ -98,22 +100,24 @@
     <section id="tables" class="py3">
       <h1>Tables</h1>
       <hr>
-      <table class="table-light">
-        <thead>
-          <tr> <th>Bacon</th> <th>Burger</th> <th>Proscuitto</th> <th>Beef</th> <th>Turkey</th> </tr>
-        </thead>
-        <tbody>
-          <tr> <td>Frankfurter</td> <td>Fatback</td> <td>Sausage</td> <td>Pork Chops</td> <td>Corned Beef</td> </tr>
-          <tr> <td>Salami</td> <td>Chuck</td> <td>Tongue</td> <td>Jerky</td> <td>Corned beef</td> </tr>
-          <tr> <td>Sausage</td> <td>Tenderloin</td> <td>Shankle</td> <td>Meatball</td> <td>Capicola</td> </tr>
-          <tr> <td>Short ribs</td> <td>Biltong</td> <td>Jowl</td> <td>Porchetta</td> <td>Shank</td> </tr>
-          <tr> <td>Meatball</td> <td>Pancetta</td> <td>Shankle</td> <td>Tail</td> <td>Venison</td> </tr>
-          <tr> <td>Jowl</td> <td>Biltong</td> <td>Meatloaf</td> <td>Frankfurter</td> <td>Swine</td> </tr>
-          <tr> <td>Tri-tip</td> <td>Shankle</td> <td>Shoulder</td> <td>Biltong</td> <td>Landjaeger</td> </tr>
-          <tr> <td>T-bone</td> <td>Sausage</td> <td>Doner</td> <td>Frankfurter</td> <td>Pancetta</td> </tr>
-          <tr> <td>Bratwurst</td> <td>Pastrami</td> <td>Bresaola</td> <td>Capicola</td> <td>Biltong</td> </tr>
-        </tbody>
-      </table>
+      <div class="overflow-auto">
+        <table class="table-light">
+          <thead>
+            <tr> <th>Bacon</th> <th>Burger</th> <th>Proscuitto</th> <th>Beef</th> <th>Turkey</th> </tr>
+          </thead>
+          <tbody>
+            <tr> <td>Frankfurter</td> <td>Fatback</td> <td>Sausage</td> <td>Pork Chops</td> <td>Corned Beef</td> </tr>
+            <tr> <td>Salami</td> <td>Chuck</td> <td>Tongue</td> <td>Jerky</td> <td>Corned beef</td> </tr>
+            <tr> <td>Sausage</td> <td>Tenderloin</td> <td>Shankle</td> <td>Meatball</td> <td>Capicola</td> </tr>
+            <tr> <td>Short ribs</td> <td>Biltong</td> <td>Jowl</td> <td>Porchetta</td> <td>Shank</td> </tr>
+            <tr> <td>Meatball</td> <td>Pancetta</td> <td>Shankle</td> <td>Tail</td> <td>Venison</td> </tr>
+            <tr> <td>Jowl</td> <td>Biltong</td> <td>Meatloaf</td> <td>Frankfurter</td> <td>Swine</td> </tr>
+            <tr> <td>Tri-tip</td> <td>Shankle</td> <td>Shoulder</td> <td>Biltong</td> <td>Landjaeger</td> </tr>
+            <tr> <td>T-bone</td> <td>Sausage</td> <td>Doner</td> <td>Frankfurter</td> <td>Pancetta</td> </tr>
+            <tr> <td>Bratwurst</td> <td>Pastrami</td> <td>Bresaola</td> <td>Capicola</td> <td>Biltong</td> </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section id="colors" class="py3">
@@ -141,11 +145,28 @@
     <section id="navigation" class="py3">
       <h1>Navigation</h1>
       <hr>
+      <div class="flex flex-justify-between border-bottom">
+        <a href="#!" class="button button-nav-light is-active">Bacon</a>
+        <a href="#!" class="button button-nav-light">Burger</a>
+        <a href="#!" class="button button-nav-light">Frankfurter</a>
+        <div class="flex-1"></div>
+        <a href="#!" class="button button-nav-light">Bratwurst</a>
+      </div>
     </section>
 
     <section id="navbars" class="py3">
       <h1>Navbars</h1>
       <hr>
+      <div class="sm-flex flex-justify-between flex-align-center white bg-light-gray">
+        <a href="#!" class="button xbutton-narrow py2 button-nav-light is-active">Bacon</a>
+        <a href="#!" class="button button-narrow py2 button-nav-light">Burger</a>
+        <a href="#!" class="button button-narrow py2 button-nav-light">Frankfurter</a>
+        <div class="flex-1"></div>
+        <div class="px2">
+          <input type="text" class="m0 field-light" placeholder="Search">
+        </div>
+        <a href="#!" class="button py2 button-nav-light">Bratwurst</a>
+      </div>
     </section>
 
     <section id="boxes" class="py3">

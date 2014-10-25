@@ -1,31 +1,31 @@
 
 .border {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: var(--border-color);
 }
 
 .border-top {
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-color: var(--border-color);
 }
 
 .border-right {
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-color: var(--border-color);
 }
 
 .border-bottom {
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-color: var(--border-color);
 }
 
 .border-left {
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-color: var(--border-color);
 }
 

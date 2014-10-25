@@ -1,0 +1,28 @@
+
+
+.button-nav-light {
+  color: var(--dark-gray);
+  background-color: transparent;
+}
+
+.button-nav-light:hover {
+  background-color: rgba(var(--blue), .0625);
+}
+
+.button-nav-light:active,
+.button-nav-light.is-active {
+  color: var(--blue);
+}
+
+.button-nav-light:focus {
+  outline: none;
+  color: var(--blue);
+  background-color: rgba(var(--blue), .0625);
+  box-shadow: 0 0 1px 2px rgba(var(--blue), .5);
+}
+
+.button-nav-light:disabled,
+.button-nav-light.is-disabled {
+  opacity: .5;
+}
+

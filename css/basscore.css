@@ -259,6 +259,10 @@ td {
   overflow: scroll;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -560,6 +564,75 @@ td {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+/*
+    Basscss UI Utilities
+*/
+
+.button-small {
+  padding: .25em .5rem;
+}
+
+.button-big {
+  line-height: 1.625;
+}
+
+.button-narrow {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.x-group-item {
+  margin-left: -1px;
+}
+
+.x-group-item:first-of-type {
+  margin-left: 0;
+}
+
+.y-group-item {
+  margin-top: -1px;
+}
+
+.y-group-item:first-of-type {
+  margin-top: 0;
+}
+
+/* Extension for 2px border items like .button-blue-outline */
+
+.x-group-item-2 {
+  margin-left: -2px;
+}
+
+.x-group-item-2:first-of-type {
+  margin-left: 0;
+}
+
+.y-group-item-2 {
+  margin-top: -2px;
+}
+
+.y-group-item-2:first-of-type {
+  margin-top: 0;
+}
+
+.x-group-item:focus,
+.x-group-item-2:focus,
+.y-group-item:focus,
+.y-group-item-2:focus {
+  position: relative;
+  z-index: 1;
+}
+
+.disclosure-group .disclosure-show {
+  display: none;
+}
+
+.disclosure-group.is-active .disclosure-show {
+  display: block !important;
+}
+
+
 
 /*
     Basscss Grid
@@ -1067,7 +1140,10 @@ td {
 @import "./lib/lg-flex.css";
 */
 
-
+body {
+  color: #333;
+  background-color: white;
+}
 
 a {
   color: #0076df;
@@ -1087,31 +1163,31 @@ hr {
 
 .border {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #999;
 }
 
 .border-top {
   border-top-style: solid;
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-color: #999;
 }
 
 .border-right {
   border-right-style: solid;
-  border-right-width: 2px;
+  border-right-width: 1px;
   border-color: #999;
 }
 
 .border-bottom {
   border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   border-color: #999;
 }
 
 .border-left {
   border-left-style: solid;
-  border-left-width: 2px;
+  border-left-width: 1px;
   border-color: #999;
 }
 
@@ -1140,15 +1216,18 @@ hr {
 }
 
 .button-blue {
-  color: white;
-  background-color: #0076df;
+  color: #0076df;
+  background-color: transparent;
+  border: 1px solid #0076df;
+  box-shadow: inset 0 0 0 1px #0076df;
   border-radius: 4px;
   -webkit-transition: background-color .1s ease-out;
           transition: background-color .1s ease-out;
 }
 
 .button-blue:hover {
-  background-color: #0056bf;
+  color: white;
+  background-color: #0076df;
 }
 
 .button-blue:active,
@@ -1158,8 +1237,10 @@ hr {
 
 .button-blue:focus {
   outline: none;
-  border: 1px solid rgba(0, 0, 0, .25);
-  box-shadow: 0 0 1px 2px rgba(0, 118, 223, .5);
+  color: white;
+  background-color: #0076df;
+  border: 1px solid #0056bf;
+  box-shadow: inset 0 0 0 1px #0076df, 0 0 1px 2px rgba(0, 118, 223, .5);
 }
 
 .button-blue:disabled,
@@ -1168,15 +1249,18 @@ hr {
 }
 
 .button-red {
-  color: white;
-  background-color: #f95020;
+  color: #f95020;
+  background-color: transparent;
+  border: 1px solid #f95020;
+  box-shadow: inset 0 0 0 1px #f95020;
   border-radius: 4px;
   -webkit-transition: background-color .1s ease-out;
           transition: background-color .1s ease-out;
 }
 
 .button-red:hover {
-  background-color: #d93000;
+  color: white;
+  background-color: #f95020;
 }
 
 .button-red:active,
@@ -1186,8 +1270,10 @@ hr {
 
 .button-red:focus {
   outline: none;
-  border: 1px solid rgba(0, 0, 0, .25);
-  box-shadow: 0 0 1px 2px rgba(249, 80, 32, .5);
+  color: white;
+  background-color: #f95020;
+  border: 1px solid #d93000;
+  box-shadow: inset 0 0 0 1px #f95020, 0 0 1px 2px rgba(249, 80, 32, .5);
 }
 
 .button-red:disabled,
@@ -1196,15 +1282,18 @@ hr {
 }
 
 .button-gray {
-  color: white;
-  background-color: #999;
+  color: #333;
+  background-color: transparent;
+  border: 1px solid #999;
+  box-shadow: inset 0 0 0 1px #999;
   border-radius: 4px;
   -webkit-transition: background-color .1s ease-out;
           transition: background-color .1s ease-out;
 }
 
 .button-gray:hover {
-  background-color: #333;
+  color: white;
+  background-color: #999;
 }
 
 .button-gray:active,
@@ -1214,12 +1303,40 @@ hr {
 
 .button-gray:focus {
   outline: none;
+  color: white;
+  background-color: #999;
   border: 1px solid rgba(0, 0, 0, .25);
   box-shadow: 0 0 1px 2px rgba(0, 118, 223, .5);
 }
 
 .button-gray:disabled,
 .button-gray.is-disabled {
+  opacity: .5;
+}
+
+.button-nav-light {
+  color: #333;
+  background-color: transparent;
+}
+
+.button-nav-light:hover {
+  background-color: rgba(0, 118, 223, .0625);
+}
+
+.button-nav-light:active,
+.button-nav-light.is-active {
+  color: #0076df;
+}
+
+.button-nav-light:focus {
+  outline: none;
+  color: #0076df;
+  background-color: rgba(0, 118, 223, .0625);
+  box-shadow: 0 0 1px 2px rgba(0, 118, 223, .5);
+}
+
+.button-nav-light:disabled,
+.button-nav-light.is-disabled {
   opacity: .5;
 }
 

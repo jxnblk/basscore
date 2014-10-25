@@ -1,5 +1,7 @@
 
 body {
+  color: var(--dark-gray);
+  background-color: white;
 }
 
 a {

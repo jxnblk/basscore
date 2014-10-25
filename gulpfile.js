@@ -5,7 +5,7 @@ var mincss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 
 gulp.task('default', function() {
-  gulp.src('./src/base.css')
+  gulp.src('./src/basscore.css')
     .pipe(basswork())
     .pipe(rename('basscore.css'))
     .pipe(gulp.dest('./css'))
